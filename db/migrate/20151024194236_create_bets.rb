@@ -1,4 +1,4 @@
-class CreateBets < ActiveRecord::Migration
+class CreateBetItems < ActiveRecord::Migration
   def change
     create_table :bets do |t|
       t.references :event, index: true, foreign_key: true

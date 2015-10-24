@@ -34,6 +34,8 @@ include BlockChainHelper
 
   def send
     user = User.find(params["id"])
+
+    
   end
 
   def receive

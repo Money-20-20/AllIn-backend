@@ -31,7 +31,7 @@ response = RestClient.get 'https://blockchain.info/merchant/8316b206-1abc-4faa-8
 
 puts response
 
-response = RestClient.get 'https://blockchain.info/merchant/8316b206-1abc-4faa-8de8-6226b3ca3d10/payment?password=Cicadas2015&address=1Mhe61CQavMB5CDRTccMEVhpYgJVHBeASb&amount=200000&from=1FeUWyhBvfjGyN4Ku4pUYSTQNw8vfRyWru&fee=10000&note=HiXandorrrr'
+response = RestClient.get 'https://blockchain.info/merchant/8316b206-1abc-4faa-8de8-6226b3ca3d10/payment?password=Cicadas2015&address=1Mhe61CQavMB5CDRTccMEVhpYgJVHBeASb&amount=200000&from=1FeUWyhBvfjGyN4Ku4pUYSTQNw8vfRyWru&fee=10000&note=fuckblockchain'
 
 
 puts response

@@ -18,7 +18,7 @@ class ScenariosController < ApplicationController
     # render json: @scenarios
     render json: json_scenario
   end
-
+  
   def show
     @scenario = Scenario.find(params[:id])
 
@@ -27,7 +27,7 @@ class ScenariosController < ApplicationController
     render json: scenario_json
   end
 
-
+  
   def create
     @event = Event.find(params[:event_id])
 

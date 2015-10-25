@@ -10,6 +10,7 @@ gem 'spring', :group => :development
 
 gem 'sqlite3'
 gem 'blockchain'
+gem 'rest_client'
 
 
 

@@ -11,7 +11,7 @@ module BlockchainHelper
       winning_amount = wager.amount * 2
       user = wager.user
       user_wallet = Blockchain::Wallet.new(user.wallet_id, user.password)
-      url = "https://blockchain.info/merchant/" + user.wallet_id + "/payment?" + "password=" + user.password + "&address=" + wallet.new_address + "&amount=" + wager.amount.to_s + "&note=fuckblockchain"
+      url = "https://blockchain.info/merchant/" + user.wallet_id + "/payment?" + "password=" + user.password + "&address=" + wallet.new_address + "&amount=" + wager.amount.to_s + "&note=blockchainrules"
       p url
       response = RestClient.get(url)
       # wallet.send(user_wallet.new_address, winning_amount.to_s, from_address: wallet.new_address)
@@ -22,8 +22,8 @@ module BlockchainHelper
     wallet = Blockchain::Wallet.new('8316b206-1abc-4faa-8de8-6226b3ca3d10', 'Cicadas2015')
 
     user = wager.user
-    url = "https://blockchain.info/merchant/" + user.wallet_id + "/payment?" + "password=" + user.password + "&address=" + "1JzSZFs2DQke2B3S4pBxaNaMzzVZaG4Cqh" + "&amount=" + "10000" + "&note=fuckblockchain"
-    response = RestClient.get 'https://blockchain.info/merchant/8316b206-1abc-4faa-8de8-6226b3ca3d10/payment?password=Cicadas2015&address=1Mhe61CQavMB5CDRTccMEVhpYgJVHBeASb&amount=200000&from=1FeUWyhBvfjGyN4Ku4pUYSTQNw8vfRyWru&fee=10000&note=fuckblockchain'
+    url = "https://blockchain.info/merchant/" + user.wallet_id + "/payment?" + "password=" + user.password + "&address=" + "1JzSZFs2DQke2B3S4pBxaNaMzzVZaG4Cqh" + "&amount=" + "10000" + "&note=blockchainrules"
+    response = RestClient.get 'https://blockchain.info/merchant/8316b206-1abc-4faa-8de8-6226b3ca3d10/payment?password=Cicadas2015&address=1Mhe61CQavMB5CDRTccMEVhpYgJVHBeASb&amount=200000&from=1FeUWyhBvfjGyN4Ku4pUYSTQNw8vfRyWru&fee=10000&note=blockchainrules'
 
 
     puts response

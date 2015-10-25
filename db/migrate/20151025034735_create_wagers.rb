@@ -4,7 +4,7 @@ class CreateWagers < ActiveRecord::Migration
       t.references :user, index: true, foreign_key: true
       t.references :scenario, index: true, foreign_key: true
       t.boolean :vote
-      t.float :amount
+      t.integer :amount
 
       t.timestamps null: false
     end

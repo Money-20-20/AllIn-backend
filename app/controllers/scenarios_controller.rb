@@ -24,6 +24,8 @@ class ScenariosController < ApplicationController
 
     @event.scenarios << Scenario.create(scenario_params)
 
+    # add to user too!
+
     render json: @event.scenarios
   end
 

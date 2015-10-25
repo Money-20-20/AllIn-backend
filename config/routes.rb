@@ -7,6 +7,14 @@ Rails.application.routes.draw do
 
   resources :users, except: [:index]
 
+  resources :events do
+    resources :scenarios
+  end
+
+  resources :wagers, only: [:create]
+
+
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

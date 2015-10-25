@@ -8,8 +8,8 @@
 
 
 User.create(username: "xander", password: "password", wallet_id: "194Sh984FrK19wHBdoAV1iBrKvGepDBTXN")
-User.create(username: "gabriel", password: "password", wallet_id: "18NGLaZwk4TyzSxNLsWuoWsChwpXv4Ji47")
-User.create(username: "anne", password: "password", wallet_id: "1Mhe61CQavMB5CDRTccMEVhpYgJVHBeASb")
+User.create(username: "gabriel", password: "password", wallet_id: "41bec886-acc2-416f-8fc1-d5a36e0ac1fd")
+User.create(username: "anne", password: "A07579805 ", wallet_id: "5e58e789-1e82-49e2-bf4c-8fa1cb450921")
 
 
 hackathon = Event.create(name: "Hackathon Money2020", latitude: 36.1221311, longitude: -115.1671175, description: "Money2020 Winner")

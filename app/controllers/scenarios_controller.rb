@@ -9,16 +9,16 @@ class ScenariosController < ApplicationController
 
     render json: @scenarios
   end
-
+  
   def show
     @scenario = Scenario.find(params[:id])
-
+  
     scenario_json = inject_extra_props(@scenario)
 
     render json: @scenario
   end
 
-
+  
   def create
     @event = Event.find(params[:event_id])
 

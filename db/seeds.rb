@@ -12,7 +12,7 @@ User.create(username: "gabriel", password: "password", wallet_id: "18NGLaZwk4Tyz
 User.create(username: "anne", password: "password", wallet_id: "1Mhe61CQavMB5CDRTccMEVhpYgJVHBeASb")
 
 
-hackathon = Event.create(name: "Hackathon Money2020", latitude: 36.1221311, longitude: -115.1671175, description: "Money2020 Winner")
+hackathon = Event.create(name: "Hackathon Money20/20", latitude: 36.1221311, longitude: -115.1671175, description: "Money20/20 Winner")
 Event.create(name: "NBA Opening Day", description: "Will the Dubs win?")
 Event.create(name: "World Series", description: "Who will win the world series?")
 Event.create(name: "Democratic National Debate", description: "Who will be favored by the people?")

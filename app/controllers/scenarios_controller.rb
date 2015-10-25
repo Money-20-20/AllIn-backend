@@ -7,15 +7,24 @@ class ScenariosController < ApplicationController
 
     @scenarios = Scenario.where(event_id: params[:event_id])
 
-    render json: @scenarios
+    json_scenario = []
+
+    @scenarios.each do |scenario|
+      json_scenario << inject_extra_scenario_props(scenario)
+    end
+
+    p json_scenario
+
+    # render json: @scenarios
+    render json: json_scenario
   end
 
   def show
     @scenario = Scenario.find(params[:id])
 
-    scenario_json = inject_extra_props(@scenario)
+    scenario_json = inject_extra_scenario_props(@scenario)
 
-    render json: @scenario
+    render json: scenario_json
   end
 
 

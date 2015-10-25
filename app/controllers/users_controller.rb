@@ -34,7 +34,7 @@ include BlockChainHelper
 
   def send
     user = User.find(params["id"])
-
+    BlockChainHelper::send(user, params["amount"])
     
   end
 

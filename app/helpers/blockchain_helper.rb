@@ -4,11 +4,11 @@ module BlockChainHelper
 
   # Add shit from the gem here
 
-  def send(user, amount)
+  def self.send(user, amount)
     wallet.send(user.address, amount, from_address)
   end
 
-  def receive(user, amount)
+  def self.receive(user, amount)
     wallet.send(user.address, amount, from_address)
   end
 
@@ -19,3 +19,6 @@ module BlockChainHelper
 
   wallet = Blockchain::Wallet.new('8316b206-1abc-4faa-8de8-6226b3ca3d10', 'Cicadas2015')
 end
+
+
+http://ourapp.com/users/13/send?amount=10000

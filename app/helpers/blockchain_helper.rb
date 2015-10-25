@@ -21,4 +21,3 @@ module BlockChainHelper
 end
 
 
-http://ourapp.com/users/13/send?amount=10000

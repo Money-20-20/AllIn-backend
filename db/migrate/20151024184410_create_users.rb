@@ -3,7 +3,7 @@ class CreateUsers < ActiveRecord::Migration
     create_table :users do |t|
       t.string :username
       t.string :password_hash
-      t.string :blockchain_address
+      t.string :wallet_id
 
       t.timestamps null: false
     end

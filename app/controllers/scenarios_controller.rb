@@ -1,5 +1,6 @@
 class ScenariosController < ApplicationController
   include BlockchainHelper
+  include JSONHelper
 
   def index
     p params
@@ -11,7 +12,12 @@ class ScenariosController < ApplicationController
   
   def show
     @scenario = Scenario.find(params[:id])
+  
+    scenario_json = inject_extra_props(@scenario)
+
+    render json: @scenario
   end
+
   
   def create
     @event = Event.find(params[:event_id])
